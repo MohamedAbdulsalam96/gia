@@ -1,0 +1,56 @@
+{
+ "creation": "2020-06-19 23:22:34.239486",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "remark",
+  "uom",
+  "qty",
+  "cost"
+ ],
+ "fields": [
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remark",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "uom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "UOM",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "columns": 2,
+   "fieldname": "cost",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Cost (USD)",
+   "options": "currency",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-06-20 01:52:27.372956",
+ "modified_by": "Administrator",
+ "module": "GIA",
+ "name": "GIA Project Equipment",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

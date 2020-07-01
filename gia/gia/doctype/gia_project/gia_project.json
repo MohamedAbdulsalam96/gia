@@ -1,0 +1,198 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-06-19 22:53:06.347527",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "currency",
+  "project_name",
+  "time_period",
+  "column_break_4",
+  "gia_sector",
+  "sector_name",
+  "papc_section",
+  "papc",
+  "eic_section",
+  "eic",
+  "equipment_section",
+  "equipment",
+  "requirement_section",
+  "requirement",
+  "service_section",
+  "service",
+  "staff_section",
+  "staff",
+  "location_section",
+  "latitude",
+  "longitude",
+  "project_location"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "gia_sector",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "GIA Sector",
+   "options": "GIA Sector"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "time_period",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Time Period (Month)"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "eic_section",
+   "fieldtype": "Section Break",
+   "label": "Estimated Investment Costs"
+  },
+  {
+   "fieldname": "eic",
+   "fieldtype": "Table",
+   "label": "Estimated Investment Costs",
+   "options": "GIA Project EIC"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "papc_section",
+   "fieldtype": "Section Break",
+   "label": "Products & Annual Production Capacity"
+  },
+  {
+   "fieldname": "papc",
+   "fieldtype": "Table",
+   "label": "Products & Annual Production Capacity",
+   "options": "GIA Project PAPC"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "equipment_section",
+   "fieldtype": "Section Break",
+   "label": "GIA Project Equipment"
+  },
+  {
+   "fieldname": "equipment",
+   "fieldtype": "Table",
+   "label": "GIA Project Equipment",
+   "options": "GIA Project Equipment"
+  },
+  {
+   "default": "USD",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "requirement_section",
+   "fieldtype": "Section Break",
+   "label": "GIA Project Requirement"
+  },
+  {
+   "fieldname": "requirement",
+   "fieldtype": "Table",
+   "label": "GIA Project Requirement",
+   "options": "GIA Project Requirement"
+  },
+  {
+   "fieldname": "service",
+   "fieldtype": "Table",
+   "label": "GIA Project Services",
+   "options": "GIA Project Service"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "service_section",
+   "fieldtype": "Section Break",
+   "label": "GIA Project Services"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "staff_section",
+   "fieldtype": "Section Break",
+   "label": "GIA Project Staff"
+  },
+  {
+   "fieldname": "staff",
+   "fieldtype": "Table",
+   "label": "GIA Project Staff",
+   "options": "GIA Project Staff"
+  },
+  {
+   "fetch_from": "gia_sector.sector_name",
+   "fieldname": "sector_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sector Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "location_section",
+   "fieldtype": "Section Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "project_location",
+   "fieldtype": "Geolocation",
+   "label": "Project Location"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Float",
+   "label": "Latitude",
+   "precision": "9"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Float",
+   "label": "Longitude",
+   "precision": "9"
+  }
+ ],
+ "modified": "2020-06-20 02:44:26.890939",
+ "modified_by": "Administrator",
+ "module": "GIA",
+ "name": "GIA Project",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "project_name",
+ "track_changes": 1
+}
