@@ -19,6 +19,7 @@
   {
    "fieldname": "sector_image",
    "fieldtype": "Attach Image",
+   "hidden": 1,
    "label": "Sector Image"
   },
   {
@@ -33,7 +34,7 @@
   }
  ],
  "image_field": "sector_image",
- "modified": "2020-06-19 22:47:18.752381",
+ "modified": "2020-07-02 03:11:55.298491",
  "modified_by": "Administrator",
  "module": "GIA",
  "name": "GIA Sector",

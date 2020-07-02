@@ -16,8 +16,14 @@
   "papc",
   "eic_section",
   "eic",
+  "section_break_12",
+  "total_cost",
+  "total_cost_word",
   "equipment_section",
   "equipment",
+  "section_break_17",
+  "total_equipment",
+  "total_equipment_word",
   "requirement_section",
   "requirement",
   "service_section",
@@ -27,7 +33,9 @@
   "location_section",
   "latitude",
   "longitude",
-  "project_location"
+  "project_location",
+  "locations_section",
+  "locations"
  ],
  "fields": [
   {
@@ -95,7 +103,6 @@
    "default": "USD",
    "fieldname": "currency",
    "fieldtype": "Link",
-   "hidden": 1,
    "label": "Currency",
    "options": "Currency"
   },
@@ -169,9 +176,55 @@
    "fieldtype": "Float",
    "label": "Longitude",
    "precision": "9"
+  },
+  {
+   "fieldname": "locations_section",
+   "fieldtype": "Section Break",
+   "label": "GIA Project Location"
+  },
+  {
+   "fieldname": "locations",
+   "fieldtype": "Table",
+   "label": "GIA Project Location",
+   "options": "GIA Project Location"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_cost_word",
+   "fieldtype": "Small Text",
+   "label": "Total Cost Word",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_equipment",
+   "fieldtype": "Currency",
+   "label": "Total Equipment",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_equipment_word",
+   "fieldtype": "Small Text",
+   "label": "Total Equipment Word",
+   "read_only": 1
   }
  ],
- "modified": "2020-06-20 02:44:26.890939",
+ "modified": "2020-07-02 04:16:51.412015",
  "modified_by": "Administrator",
  "module": "GIA",
  "name": "GIA Project",

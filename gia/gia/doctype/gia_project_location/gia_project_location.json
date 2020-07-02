@@ -1,0 +1,48 @@
+{
+ "creation": "2020-07-02 02:46:31.998629",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "admin1",
+  "admin2",
+  "admin3",
+  "reason"
+ ],
+ "fields": [
+  {
+   "fieldname": "admin1",
+   "fieldtype": "Link",
+   "label": "Admin1",
+   "options": "GIA Admin"
+  },
+  {
+   "fieldname": "admin2",
+   "fieldtype": "Link",
+   "label": "Admin2",
+   "options": "GIA Admin"
+  },
+  {
+   "fieldname": "admin3",
+   "fieldtype": "Link",
+   "label": "Admin3",
+   "options": "GIA Admin"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-07-02 02:46:31.998629",
+ "modified_by": "Administrator",
+ "module": "GIA",
+ "name": "GIA Project Location",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

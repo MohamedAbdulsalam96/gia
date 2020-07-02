@@ -1,0 +1,110 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-07-02 03:05:25.782539",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "gia_sector",
+  "sub_sector_name",
+  "sub_sector_image",
+  "description",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_gia_sub_sector"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "gia_sector",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "GIA Sector",
+   "options": "GIA Sector",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sub_sector_name",
+   "fieldtype": "Data",
+   "label": "Sub Sector Name"
+  },
+  {
+   "fieldname": "sub_sector_image",
+   "fieldtype": "Attach Image",
+   "label": "Sub Sector Image"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Sub Group?"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Old Parent",
+   "options": "GIA Sub Sector"
+  },
+  {
+   "fieldname": "parent_gia_sub_sector",
+   "fieldtype": "Link",
+   "label": "Parent GIA Sub Sector",
+   "options": "GIA Sub Sector"
+  }
+ ],
+ "image_field": "sub_sector_image",
+ "is_tree": 1,
+ "modified": "2020-07-02 03:19:59.482532",
+ "modified_by": "Administrator",
+ "module": "GIA",
+ "name": "GIA Sub Sector",
+ "nsm_parent_field": "parent_gia_sub_sector",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
