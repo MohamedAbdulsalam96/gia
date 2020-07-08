@@ -13,29 +13,33 @@
   {
    "fieldname": "admin1",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Admin1",
    "options": "GIA Admin"
   },
   {
    "fieldname": "admin2",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Admin2",
    "options": "GIA Admin"
   },
   {
    "fieldname": "admin3",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Admin3",
    "options": "GIA Admin"
   },
   {
    "fieldname": "reason",
    "fieldtype": "Small Text",
+   "in_list_view": 1,
    "label": "Reason"
   }
  ],
  "istable": 1,
- "modified": "2020-07-02 02:46:31.998629",
+ "modified": "2020-07-08 11:10:20.968923",
  "modified_by": "Administrator",
  "module": "GIA",
  "name": "GIA Project Location",
