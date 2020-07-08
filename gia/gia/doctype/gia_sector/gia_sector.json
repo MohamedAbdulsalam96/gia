@@ -8,13 +8,18 @@
   "naming_series",
   "sector_name",
   "sector_image",
-  "description"
+  "description",
+  "disable"
  ],
  "fields": [
   {
    "fieldname": "sector_name",
    "fieldtype": "Data",
-   "label": "Sector Name"
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Sector Name",
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "sector_image",
@@ -25,16 +30,24 @@
   {
    "fieldname": "description",
    "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Description"
   },
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Naming Series"
+  },
+  {
+   "default": "0",
+   "fieldname": "disable",
+   "fieldtype": "Check",
+   "label": "Disable"
   }
  ],
  "image_field": "sector_image",
- "modified": "2020-07-02 03:11:55.298491",
+ "modified": "2020-07-08 10:32:23.903990",
  "modified_by": "Administrator",
  "module": "GIA",
  "name": "GIA Sector",
@@ -54,7 +67,9 @@
   }
  ],
  "quick_entry": 1,
+ "search_fields": "sector_name,description",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "sector_name",
  "track_changes": 1
 }

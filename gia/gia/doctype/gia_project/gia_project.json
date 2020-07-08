@@ -12,6 +12,8 @@
   "column_break_4",
   "gia_sector",
   "sector_name",
+  "gia_sub_sector",
+  "sub_sector_name",
   "papc_section",
   "papc",
   "eic_section",
@@ -48,7 +50,8 @@
    "fieldtype": "Link",
    "in_standard_filter": 1,
    "label": "GIA Sector",
-   "options": "GIA Sector"
+   "options": "GIA Sector",
+   "reqd": 1
   },
   {
    "fieldname": "project_name",
@@ -222,9 +225,25 @@
    "fieldtype": "Small Text",
    "label": "Total Equipment Word",
    "read_only": 1
+  },
+  {
+   "fieldname": "gia_sub_sector",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "GIA Sub Sector",
+   "options": "GIA Sub Sector",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "gia_sub_sector.sub_sector_name",
+   "fieldname": "sub_sector_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sub Sector Name",
+   "read_only": 1
   }
  ],
- "modified": "2020-07-02 04:16:51.412015",
+ "modified": "2020-07-08 10:37:25.929730",
  "modified_by": "Administrator",
  "module": "GIA",
  "name": "GIA Project",
@@ -244,6 +263,7 @@
   }
  ],
  "quick_entry": 1,
+ "search_fields": "project_name",
  "sort_field": "modified",
  "sort_order": "DESC",
  "title_field": "project_name",

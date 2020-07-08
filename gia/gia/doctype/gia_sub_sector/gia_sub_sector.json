@@ -26,6 +26,7 @@
    "fieldname": "gia_sector",
    "fieldtype": "Link",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "GIA Sector",
    "options": "GIA Sector",
    "reqd": 1
@@ -33,7 +34,11 @@
   {
    "fieldname": "sub_sector_name",
    "fieldtype": "Data",
-   "label": "Sub Sector Name"
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Sub Sector Name",
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "sub_sector_image",
@@ -43,6 +48,8 @@
   {
    "fieldname": "description",
    "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Description"
   },
   {
@@ -83,7 +90,7 @@
  ],
  "image_field": "sub_sector_image",
  "is_tree": 1,
- "modified": "2020-07-02 03:19:59.482532",
+ "modified": "2020-07-08 10:33:46.347678",
  "modified_by": "Administrator",
  "module": "GIA",
  "name": "GIA Sub Sector",
@@ -104,7 +111,9 @@
   }
  ],
  "quick_entry": 1,
+ "search_fields": "sub_sector_name,gia_sector,parent_gia_sub_sector",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "sub_sector_name",
  "track_changes": 1
 }
