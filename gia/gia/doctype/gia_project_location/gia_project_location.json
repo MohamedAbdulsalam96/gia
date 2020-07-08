@@ -5,8 +5,11 @@
  "engine": "InnoDB",
  "field_order": [
   "admin1",
+  "admin1_name",
   "admin2",
+  "admin2_name",
   "admin3",
+  "admin3_name",
   "reason"
  ],
  "fields": [
@@ -27,7 +30,6 @@
   {
    "fieldname": "admin3",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "label": "Admin3",
    "options": "GIA Admin"
   },
@@ -36,10 +38,33 @@
    "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "Reason"
+  },
+  {
+   "fetch_from": "admin1.admin_name",
+   "fieldname": "admin1_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Admin1 Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "admin2.admin_name",
+   "fieldname": "admin2_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Admin2 Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "admin3.admin_name",
+   "fieldname": "admin3_name",
+   "fieldtype": "Data",
+   "label": "Admin3 Name",
+   "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2020-07-08 11:10:20.968923",
+ "modified": "2020-07-08 11:26:17.396781",
  "modified_by": "Administrator",
  "module": "GIA",
  "name": "GIA Project Location",
