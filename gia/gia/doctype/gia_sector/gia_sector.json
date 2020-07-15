@@ -1,4 +1,5 @@
 {
+ "allow_rename": 1,
  "autoname": "naming_series:",
  "creation": "2020-06-19 22:44:58.466507",
  "doctype": "DocType",
@@ -85,8 +86,7 @@
    "fieldname": "parent_gia_sector",
    "fieldtype": "Link",
    "label": "Parent GIA Sector",
-   "options": "GIA Sector",
-   "reqd": 1
+   "options": "GIA Sector"
   },
   {
    "fieldname": "column_break_6",
@@ -95,7 +95,7 @@
  ],
  "image_field": "sector_image",
  "is_tree": 1,
- "modified": "2020-07-15 12:47:16.667196",
+ "modified": "2020-07-15 13:00:26.637389",
  "modified_by": "Administrator",
  "module": "GIA",
  "name": "GIA Sector",
