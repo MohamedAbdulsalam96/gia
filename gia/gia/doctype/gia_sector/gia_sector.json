@@ -9,7 +9,13 @@
   "sector_name",
   "sector_image",
   "description",
-  "disable"
+  "disable",
+  "column_break_6",
+  "lft",
+  "rgt",
+  "parent_gia_sector",
+  "is_group",
+  "old_parent"
  ],
  "fields": [
   {
@@ -44,13 +50,56 @@
    "fieldname": "disable",
    "fieldtype": "Check",
    "label": "Disable"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Old Parent",
+   "options": "GIA Sector",
+   "read_only": 1
+  },
+  {
+   "fieldname": "parent_gia_sector",
+   "fieldtype": "Link",
+   "label": "Parent GIA Sector",
+   "options": "GIA Sector",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
   }
  ],
  "image_field": "sector_image",
- "modified": "2020-07-08 10:32:23.903990",
+ "is_tree": 1,
+ "modified": "2020-07-15 12:47:16.667196",
  "modified_by": "Administrator",
  "module": "GIA",
  "name": "GIA Sector",
+ "nsm_parent_field": "parent_gia_sector",
  "owner": "Administrator",
  "permissions": [
   {

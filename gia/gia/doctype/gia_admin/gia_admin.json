@@ -38,7 +38,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Admin Type",
-   "options": "Governate\nDistrict\nArea"
+   "options": "Country\nGovernate\nDistrict\nArea"
   },
   {
    "default": "0",
@@ -92,7 +92,7 @@
   }
  ],
  "is_tree": 1,
- "modified": "2020-07-08 11:22:34.897355",
+ "modified": "2020-07-08 11:39:56.590657",
  "modified_by": "Administrator",
  "module": "GIA",
  "name": "GIA Admin",
