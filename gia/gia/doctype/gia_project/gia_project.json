@@ -36,7 +36,11 @@
   "location_section",
   "latitude",
   "longitude",
-  "project_location"
+  "project_location",
+  "gia_project_land_section_section",
+  "gia_project_land",
+  "gia_project_land_availability_s_section",
+  "gia_project_land_availability"
  ],
  "fields": [
   {
@@ -100,7 +104,6 @@
    "options": "GIA Project Equipment"
   },
   {
-   "default": "USD",
    "fieldname": "currency",
    "fieldtype": "Link",
    "label": "Currency",
@@ -175,7 +178,6 @@
    "precision": "9"
   },
   {
-   "default": "0",
    "fieldname": "total_cost",
    "fieldtype": "Currency",
    "label": "Total Cost",
@@ -230,10 +232,32 @@
    "fieldtype": "Attach Image",
    "hidden": 1,
    "label": "project_image"
+  },
+  {
+   "fieldname": "gia_project_land_section_section",
+   "fieldtype": "Section Break",
+   "label": "GIA Project Land Section"
+  },
+  {
+   "fieldname": "gia_project_land",
+   "fieldtype": "Table",
+   "label": "GIA Project Land",
+   "options": "GIA Project Land"
+  },
+  {
+   "fieldname": "gia_project_land_availability_s_section",
+   "fieldtype": "Section Break",
+   "label": "GIA Project Land Availability S"
+  },
+  {
+   "fieldname": "gia_project_land_availability",
+   "fieldtype": "Table",
+   "label": "GIA Project Land Availability",
+   "options": "GIA Project Land Availability"
   }
  ],
  "image_field": "project_image",
- "modified": "2020-07-19 21:20:16.990741",
+ "modified": "2020-07-19 22:19:48.996735",
  "modified_by": "Administrator",
  "module": "GIA",
  "name": "GIA Project",
