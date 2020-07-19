@@ -1,0 +1,91 @@
+{
+ "creation": "2020-07-19 17:40:30.956638",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "offer_quantity",
+  "offer_amount",
+  "request_quantity",
+  "request_amount",
+  "gap_quantity",
+  "gap_amount",
+  "annual_growth_rate",
+  "target_quantity",
+  "target_amount",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "offer_quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Offer Quantity"
+  },
+  {
+   "fieldname": "offer_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Offer Amount"
+  },
+  {
+   "fieldname": "request_quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Request Quantity"
+  },
+  {
+   "fieldname": "request_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Request Amount"
+  },
+  {
+   "fieldname": "gap_quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Gap Quantity"
+  },
+  {
+   "fieldname": "gap_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Gap Amount"
+  },
+  {
+   "fieldname": "annual_growth_rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Annual Growth Rate"
+  },
+  {
+   "fieldname": "target_quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Target Quantity"
+  },
+  {
+   "fieldname": "target_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Target Amount"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Notes"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-07-19 17:40:30.956638",
+ "modified_by": "Administrator",
+ "module": "GIA",
+ "name": "GIA Sector Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

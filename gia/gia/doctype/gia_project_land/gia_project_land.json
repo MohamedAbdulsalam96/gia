@@ -1,0 +1,44 @@
+{
+ "creation": "2020-07-19 17:47:13.285910",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "land_information",
+  "land_area",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "land_information",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Land Information",
+   "reqd": 1
+  },
+  {
+   "fieldname": "land_area",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Land Area",
+   "reqd": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Notes"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-07-19 17:47:13.285910",
+ "modified_by": "Administrator",
+ "module": "GIA",
+ "name": "GIA Project Land",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

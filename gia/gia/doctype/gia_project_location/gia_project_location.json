@@ -4,6 +4,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "option_no",
   "admin1",
   "admin1_name",
   "admin2",
@@ -32,6 +33,7 @@
   {
    "fieldname": "admin3",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Admin3",
    "options": "GIA Admin"
   },
@@ -63,12 +65,20 @@
    "fetch_from": "admin3.admin_name",
    "fieldname": "admin3_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Admin3 Name",
    "read_only": 1
+  },
+  {
+   "fieldname": "option_no",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Option No",
+   "options": "1\n2\n3\n4"
   }
  ],
  "istable": 1,
- "modified": "2020-07-08 11:39:24.945196",
+ "modified": "2020-07-19 17:42:54.383691",
  "modified_by": "Administrator",
  "module": "GIA",
  "name": "GIA Project Location",

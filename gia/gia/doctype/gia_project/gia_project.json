@@ -38,7 +38,11 @@
   "longitude",
   "project_location",
   "locations_section",
-  "locations"
+  "locations",
+  "gia_project_land_section_section",
+  "gia_project_land",
+  "gia_project_land_availability_s_section",
+  "gia_project_land_availability"
  ],
  "fields": [
   {
@@ -76,7 +80,6 @@
   {
    "fieldname": "eic",
    "fieldtype": "Table",
-   "label": "Estimated Investment Costs",
    "options": "GIA Project EIC"
   },
   {
@@ -88,7 +91,6 @@
   {
    "fieldname": "papc",
    "fieldtype": "Table",
-   "label": "Products & Annual Production Capacity",
    "options": "GIA Project PAPC"
   },
   {
@@ -119,13 +121,11 @@
   {
    "fieldname": "requirement",
    "fieldtype": "Table",
-   "label": "GIA Project Requirement",
    "options": "GIA Project Requirement"
   },
   {
    "fieldname": "service",
    "fieldtype": "Table",
-   "label": "GIA Project Services",
    "options": "GIA Project Service"
   },
   {
@@ -143,7 +143,6 @@
   {
    "fieldname": "staff",
    "fieldtype": "Table",
-   "label": "GIA Project Staff",
    "options": "GIA Project Staff"
   },
   {
@@ -189,7 +188,6 @@
   {
    "fieldname": "locations",
    "fieldtype": "Table",
-   "label": "GIA Project Location",
    "options": "GIA Project Location"
   },
   {
@@ -248,10 +246,31 @@
    "fieldtype": "Attach Image",
    "hidden": 1,
    "label": "project_image"
+  },
+  {
+   "fieldname": "gia_project_land_section_section",
+   "fieldtype": "Section Break",
+   "label": "GIA Project Land Section"
+  },
+  {
+   "fieldname": "gia_project_land",
+   "fieldtype": "Table",
+   "options": "GIA Project Land"
+  },
+  {
+   "fieldname": "gia_project_land_availability_s_section",
+   "fieldtype": "Section Break",
+   "label": "GIA Project Land Availability S"
+  },
+  {
+   "fieldname": "gia_project_land_availability",
+   "fieldtype": "Table",
+   "label": "GIA Project Land Availability",
+   "options": "GIA Project Land Availability"
   }
  ],
  "image_field": "project_image",
- "modified": "2020-07-08 11:19:25.810697",
+ "modified": "2020-07-19 17:50:51.254776",
  "modified_by": "Administrator",
  "module": "GIA",
  "name": "GIA Project",

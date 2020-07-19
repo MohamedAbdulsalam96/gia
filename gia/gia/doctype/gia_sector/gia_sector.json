@@ -16,7 +16,9 @@
   "rgt",
   "parent_gia_sector",
   "is_group",
-  "old_parent"
+  "old_parent",
+  "gia_sector_detail_section_section",
+  "gia_sector_detail"
  ],
  "fields": [
   {
@@ -36,7 +38,7 @@
   },
   {
    "fieldname": "description",
-   "fieldtype": "Small Text",
+   "fieldtype": "Text Editor",
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Description"
@@ -91,11 +93,22 @@
   {
    "fieldname": "column_break_6",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gia_sector_detail_section_section",
+   "fieldtype": "Section Break",
+   "label": "GIA Sector Detail Section"
+  },
+  {
+   "fieldname": "gia_sector_detail",
+   "fieldtype": "Table",
+   "label": "GIA Sector Detail",
+   "options": "GIA Sector Detail"
   }
  ],
  "image_field": "sector_image",
  "is_tree": 1,
- "modified": "2020-07-15 13:00:26.637389",
+ "modified": "2020-07-19 17:41:38.124076",
  "modified_by": "Administrator",
  "module": "GIA",
  "name": "GIA Sector",
