@@ -50,8 +50,7 @@
    "fieldtype": "Link",
    "in_standard_filter": 1,
    "label": "GIA Sector",
-   "options": "GIA Sector",
-   "reqd": 1
+   "options": "GIA Sector"
   },
   {
    "fieldname": "project_name",
@@ -190,8 +189,7 @@
    "fieldtype": "Link",
    "in_standard_filter": 1,
    "label": "GIA Sub Sector",
-   "options": "GIA Sub Sector",
-   "reqd": 1
+   "options": "GIA Sub Sector"
   },
   {
    "fetch_from": "gia_sub_sector.sub_sector_name",
@@ -231,7 +229,7 @@
   }
  ],
  "image_field": "project_image",
- "modified": "2020-07-20 05:56:53.535042",
+ "modified": "2020-07-20 06:52:08.589530",
  "modified_by": "Administrator",
  "module": "GIA",
  "name": "GIA Project",
