@@ -33,10 +33,6 @@
   "service",
   "staff_section",
   "staff",
-  "location_section",
-  "latitude",
-  "longitude",
-  "project_location",
   "gia_project_land_section_section",
   "gia_project_land",
   "gia_project_land_availability_s_section",
@@ -156,29 +152,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "collapsible": 1,
-   "fieldname": "location_section",
-   "fieldtype": "Section Break",
-   "label": "Location"
-  },
-  {
-   "fieldname": "project_location",
-   "fieldtype": "Geolocation",
-   "label": "Project Location"
-  },
-  {
-   "fieldname": "latitude",
-   "fieldtype": "Float",
-   "label": "Latitude",
-   "precision": "9"
-  },
-  {
-   "fieldname": "longitude",
-   "fieldtype": "Float",
-   "label": "Longitude",
-   "precision": "9"
-  },
-  {
    "fieldname": "total_cost",
    "fieldtype": "Currency",
    "label": "Total Cost",
@@ -258,7 +231,7 @@
   }
  ],
  "image_field": "project_image",
- "modified": "2020-07-20 05:03:36.467740",
+ "modified": "2020-07-20 05:56:53.535042",
  "modified_by": "Administrator",
  "module": "GIA",
  "name": "GIA Project",
