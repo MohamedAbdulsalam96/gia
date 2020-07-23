@@ -1,4 +1,5 @@
 {
+ "allow_rename": 1,
  "autoname": "naming_series:",
  "creation": "2020-07-02 03:05:25.782539",
  "doctype": "DocType",
@@ -6,8 +7,8 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
+  "subject",
   "gia_sector",
-  "sub_sector_name",
   "sub_sector_image",
   "description",
   "lft",
@@ -30,16 +31,7 @@
    "in_standard_filter": 1,
    "label": "GIA Sector",
    "options": "GIA Sector",
-   "reqd": 1
-  },
-  {
-   "fieldname": "sub_sector_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Sub Sector Name",
-   "reqd": 1,
-   "unique": 1
+   "set_only_once": 1
   },
   {
    "fieldname": "sub_sector_image",
@@ -88,11 +80,17 @@
    "fieldtype": "Link",
    "label": "Parent GIA Sub Sector",
    "options": "GIA Sub Sector"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject",
+   "reqd": 1
   }
  ],
  "image_field": "sub_sector_image",
  "is_tree": 1,
- "modified": "2020-07-20 05:04:14.793868",
+ "modified": "2020-07-23 23:11:54.655981",
  "modified_by": "Administrator",
  "module": "GIA",
  "name": "GIA Sub Sector",
@@ -113,9 +111,9 @@
   }
  ],
  "quick_entry": 1,
- "search_fields": "sub_sector_name,gia_sector,parent_gia_sub_sector",
+ "search_fields": "subject,gia_sector,parent_gia_sub_sector",
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "sub_sector_name",
+ "title_field": "subject",
  "track_changes": 1
 }

@@ -33,6 +33,8 @@
   "service",
   "staff_section",
   "staff",
+  "section_break_29",
+  "total_staff",
   "gia_project_land_section_section",
   "gia_project_land",
   "gia_project_land_availability_s_section",
@@ -139,7 +141,7 @@
    "options": "GIA Project Staff"
   },
   {
-   "fetch_from": "gia_sector.sector_name",
+   "fetch_from": "gia_sector.subject",
    "fieldname": "sector_name",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -192,7 +194,7 @@
    "options": "GIA Sub Sector"
   },
   {
-   "fetch_from": "gia_sub_sector.sub_sector_name",
+   "fetch_from": "gia_sub_sector.subject",
    "fieldname": "sub_sector_name",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -226,10 +228,21 @@
    "fieldtype": "Table",
    "label": "GIA Project Land Availability",
    "options": "GIA Project Land Availability"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_staff",
+   "fieldtype": "Int",
+   "label": "Total Staff",
+   "read_only": 1
   }
  ],
  "image_field": "project_image",
- "modified": "2020-07-20 06:52:08.589530",
+ "modified": "2020-07-23 23:24:51.193162",
  "modified_by": "Administrator",
  "module": "GIA",
  "name": "GIA Project",

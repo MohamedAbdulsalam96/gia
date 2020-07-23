@@ -9,6 +9,7 @@ from frappe.utils import money_in_words
 
 class GIAProject(Document):
 	def validate(self):
+		self.currency='USD'
 		if self.eic:
 			tot=0.0
 			for co in self.get("eic"):
@@ -24,7 +25,15 @@ class GIAProject(Document):
 			for co in self.get("equipment"):
 				tot+=co.cost
 			self.total_equipment=tot
-			self.total_equipment_word = money_in_words(self.total_cost, self.currency)
+			self.total_equipment_word = money_in_words(self.total_equipment, self.currency)
 		else:
 			self.total_equipment=0.0
 			self.total_equipment_word = None
+
+		if self.staff:
+			tot=0.0
+			for co in self.get("staff"):
+				tot+=co.qty
+			self.total_staff=tot
+		else:
+			self.total_staff=0

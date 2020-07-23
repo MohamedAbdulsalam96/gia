@@ -1,6 +1,7 @@
 {
  "creation": "2020-06-19 23:48:21.183274",
  "doctype": "DocType",
+ "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "type",
@@ -40,8 +41,8 @@
   }
  ],
  "istable": 1,
- "modified": "2020-06-20 01:31:35.557952",
- "modified_by": "a.mutaher@partnerconsultingye.com",
+ "modified": "2020-07-23 23:36:08.928307",
+ "modified_by": "Administrator",
  "module": "GIA",
  "name": "GIA Project Staff",
  "owner": "Administrator",
