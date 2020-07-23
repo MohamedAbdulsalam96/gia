@@ -31,6 +31,7 @@
    "options": "GIA Admin"
   },
   {
+   "columns": 1,
    "fieldname": "admin3",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -44,7 +45,7 @@
    "label": "Reason"
   },
   {
-   "columns": 2,
+   "columns": 1,
    "fetch_from": "admin1.admin_name",
    "fieldname": "admin1_name",
    "fieldtype": "Data",
@@ -53,7 +54,7 @@
    "read_only": 1
   },
   {
-   "columns": 2,
+   "columns": 1,
    "fetch_from": "admin2.admin_name",
    "fieldname": "admin2_name",
    "fieldtype": "Data",
@@ -62,6 +63,7 @@
    "read_only": 1
   },
   {
+   "columns": 1,
    "fetch_from": "admin3.admin_name",
    "fieldname": "admin3_name",
    "fieldtype": "Data",
@@ -70,6 +72,7 @@
    "read_only": 1
   },
   {
+   "columns": 1,
    "fieldname": "option_no",
    "fieldtype": "Select",
    "in_list_view": 1,
@@ -78,7 +81,7 @@
   }
  ],
  "istable": 1,
- "modified": "2020-07-19 17:42:54.383691",
+ "modified": "2020-07-24 01:06:53.303175",
  "modified_by": "Administrator",
  "module": "GIA",
  "name": "GIA Project Location",

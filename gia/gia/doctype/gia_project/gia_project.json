@@ -35,6 +35,8 @@
   "staff",
   "section_break_29",
   "total_staff",
+  "section_break_31",
+  "gia_project_location",
   "gia_project_land_section_section",
   "gia_project_land",
   "gia_project_land_availability_s_section",
@@ -76,6 +78,7 @@
   {
    "fieldname": "eic",
    "fieldtype": "Table",
+   "label": "Estimated Investment Costs",
    "options": "GIA Project EIC"
   },
   {
@@ -87,6 +90,7 @@
   {
    "fieldname": "papc",
    "fieldtype": "Table",
+   "label": "Products & Annual Production Capacity",
    "options": "GIA Project PAPC"
   },
   {
@@ -116,11 +120,13 @@
   {
    "fieldname": "requirement",
    "fieldtype": "Table",
+   "label": "GIA Project Requirement",
    "options": "GIA Project Requirement"
   },
   {
    "fieldname": "service",
    "fieldtype": "Table",
+   "label": "GIA Project Services",
    "options": "GIA Project Service"
   },
   {
@@ -138,6 +144,7 @@
   {
    "fieldname": "staff",
    "fieldtype": "Table",
+   "label": "GIA Project Staff",
    "options": "GIA Project Staff"
   },
   {
@@ -215,13 +222,13 @@
   {
    "fieldname": "gia_project_land",
    "fieldtype": "Table",
-   "label": "GIA Project Land",
+   "label": "GIA Project Land Section",
    "options": "GIA Project Land"
   },
   {
    "fieldname": "gia_project_land_availability_s_section",
    "fieldtype": "Section Break",
-   "label": "GIA Project Land Availability S"
+   "label": "GIA Project Land Availability"
   },
   {
    "fieldname": "gia_project_land_availability",
@@ -239,10 +246,21 @@
    "fieldtype": "Int",
    "label": "Total Staff",
    "read_only": 1
+  },
+  {
+   "fieldname": "gia_project_location",
+   "fieldtype": "Table",
+   "label": "GIA Project Location",
+   "options": "GIA Project Location"
+  },
+  {
+   "fieldname": "section_break_31",
+   "fieldtype": "Section Break",
+   "label": "GIA Project Location"
   }
  ],
  "image_field": "project_image",
- "modified": "2020-07-23 23:24:51.193162",
+ "modified": "2020-07-24 00:51:15.144955",
  "modified_by": "Administrator",
  "module": "GIA",
  "name": "GIA Project",
