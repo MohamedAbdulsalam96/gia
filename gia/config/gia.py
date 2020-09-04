@@ -26,5 +26,17 @@ def get_data():
 
 				}
 			]
+		},
+		{
+			"label": _("Reports"),
+			"icon": "fa fa-list",
+			"items": [
+				{
+					"type": "report",
+					"name": "GIA Project Summery",
+					"doctype": "GIA Project",
+					"is_query_report": True
+				}
+			]
 		}
 	]
